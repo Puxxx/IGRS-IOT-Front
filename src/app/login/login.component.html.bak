@@ -1,0 +1,46 @@
+<main>
+  <canvas class="plane-canvas" id="plane-canvas"></canvas>
+  <canvas class="main-canvas" id="main-canvas"></canvas>
+  <div class="mouse" id="mouse">Hold mouse1 button</div>
+
+  <div class="login-container">
+    <h3>智慧楼宇操作平台系统</h3>
+    <div class="username">
+      <label for="">
+        <!--<fa-icon [icon]="faUser"></fa-icon>-->
+        用户名：</label>
+      <input type="text" placeholder="请输入用户名">
+    </div>
+    <div class="password">
+      <label for=""><i>
+        <!--<fa-icon [icon]="faUnlock"></fa-icon>-->
+      </i> 密码：</label>
+      <input type="password" placeholder="请输入密码">
+    </div>
+    <label class="anim">
+      <input type="checkbox" class="checkbox" required=""><span> 是否保存密码</span>
+    </label>
+    <input type="submit">
+    <nav>
+      <a routerLink="./dashboard" routerLinkActive="active">Enter!</a>
+      <router-outlet></router-outlet>
+    </nav>
+  </div>
+  <div class="plate">
+    <h2 class="text-animation" data-js="text">IGRS developer</h2>
+    <p class="text-animation" data-js="text">ChongQing, Saint-Petersburg</p>
+    <div class="social" id="social">
+      <a target="_blank" class="social__twitter" href="https://twitter.com/fajjet">
+        <svg viewBox="0 0 32 32">
+          <use xlink:href="#twitter"></use>
+        </svg>
+      </a>
+      <a target="_blank" class="social__codepen" href="https://codepen.io/fajjet">
+        <svg viewBox="0 0 32 32">
+          <use xlink:href="#codepen"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</main>
+

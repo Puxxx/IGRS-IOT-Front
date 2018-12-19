@@ -1,0 +1,89 @@
+/* Header */
+$squre: 230px;
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+#large-header {
+  background-image: url('../../assets/images/abstract-art-artistic-ps.jpg');
+  background-size: cover;
+}
+
+.main-title {
+  position: absolute;
+  //left:0; right:0; top:0; bottom:0;
+  //margin:auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -$squre/2;
+  margin-left: -$squre/2;
+  width: $squre;
+  height: $squre;
+  background-color: #6e9defde;
+  border: 0.5em solid #ffffff44;
+}
+
+.mat-fab {
+  font-size: 2em;
+}
+
+.st {
+  line-height: 36px;
+}
+
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+.login-container {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+  place-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.login-header {
+  margin-bottom: 24px;
+}
+
+.login-spacer {
+  flex: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  width: 220px;
+}
+
+.button-close {
+  user-select:none;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}

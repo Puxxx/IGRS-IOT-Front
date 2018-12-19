@@ -1,0 +1,12 @@
+<p>
+  lifecycle works!
+</p>
+<div class="child">
+  <h2>我是子组件</h2>
+  <div>问候语:{{greeting}}- <span>{{message}}</span></div>
+  <div>姓名：{{user.name}}</div>
+  <div>消息：<input [(ngModel)]="message"></div>
+  <img [src]="iconUrl"/>
+</div>
+
+<a routerLink="./login" routerLinkActive="active">Manage Crises</a>
