@@ -3,8 +3,8 @@ import {RouterModule, Routes} from '@angular/router';
 
 import {AppComponent} from '../app.component';
 
-import {AdminComponent} from './admin.component';
-import {LoginComponent} from '../login/login.component';
+import {AdminComponent} from './admin/admin.component';
+import {LoginComponent} from '../pages/login-new/login.component';
 import {DigitalClockComponent} from './digital-clock/digital-clock.component';
 
 const adminRoutes: Routes = [

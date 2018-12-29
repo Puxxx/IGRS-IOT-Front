@@ -1,14 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~normalize.css";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "./assets/framework/animate.css";
+//@import "~normalize.css";
+//@import "./assets/framework/animate.css";
 @import "./assets/iconfont/material-icons.css";
 
-html {
-  height: 100%;
-  min-height: 100%;
-}
+@import url('https://cdn.quilljs.com/1.2.2/quill.snow.css');
+@import url('https://cdn.quilljs.com/1.2.2/quill.bubble.css');
 
-body {
-  height: 100%;
-}
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "app/theme/styles/base";
+@import "app/theme/styles/spaces";
+@import "app/theme/styles/libs-override";
+@import "app/theme/styles/theme";
+@import "app/theme/styles/gradients";
+@import "app/theme/styles/rtl";

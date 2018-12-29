@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
-import {LoginComponent} from './login/login.component';
+import {Component, ViewChild} from '@angular/core';
+import {AppSettings} from './app.settings';
+import {Settings} from './app.settings.model';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,9 @@ import {LoginComponent} from './login/login.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'igrsiot-front';
-  showFiller = false;
+  public settings: Settings;
 
-
-  constructor() {
+  constructor(public appSettings: AppSettings) {
+    this.settings = this.appSettings.settings;
   }
 }

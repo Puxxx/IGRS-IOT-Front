@@ -1,13 +1,10 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
-import {AdminComponent} from './admin.component';
-import {LoginComponent} from '../login/login.component';
-import {AppComponent} from '../app.component';
+import {AdminComponent} from './admin/admin.component';
 
 import {DigitalClockComponent} from './digital-clock/digital-clock.component';
 import {AdminRoutingModule} from './admin-routing.module';
-import {PageNotFoundComponent} from '../page-not-found/page-not-found.component';
 
 @NgModule({
   imports: [
@@ -16,10 +13,7 @@ import {PageNotFoundComponent} from '../page-not-found/page-not-found.component'
   ],
   declarations: [
     AdminComponent,
-    LoginComponent,
     DigitalClockComponent,
-    AppComponent,
-    PageNotFoundComponent
   ]
 })
 export class AdminModule {
